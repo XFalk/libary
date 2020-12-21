@@ -1,0 +1,88 @@
+body {
+    background: #fff9f0bf;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+}
+
+header {
+    background: linear-gradient(to left, #fff2de, #bfa47c);
+    width: 100%;
+    margin: 0px;
+}
+
+header h1 {
+    margin: 0px;
+    text-align: center;
+    padding: 2%;
+    font-variant: small-caps;
+    font-family: monospace;
+    font-size: 500%;
+    letter-spacing: 20px;
+    color: #404040;
+}
+
+main {
+
+    margin: 2%;
+    background: #f2ebe1b0;
+
+}
+
+#books {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.book {
+    border: solid 1px;
+    margin: 1%;
+    padding: 1%;
+    width: 8%;
+    background: #ab9676;
+    min-width: 100px;
+    border-radius: 20px;
+}
+
+#add {
+    height: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+#button_add {
+    margin: 2%;
+    padding: 1%;
+}
+
+.enter {
+    padding: 2%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+    width: 20%;
+    min-height: 350px;
+    min-width: 250px;
+    background: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin: -100px 0 0 -200px;
+    /* отступы равны половинным размера формы */
+    z-index: 9999;
+    /* чтобы форма была поверх всех элементов страницы */
+}
+
+.enter * {
+    margin: 5px;
+}
+
+.buttons {
+    margin-top: 10%;
+}
+
+.hidden {
+    display: none;
+}

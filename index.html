@@ -1,11 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-   <script src="src/script.js" async></script>
+    <script src="src/script.js" async></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <title>Библиотека</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Библиотека</h1>
+    </header>
+    <main>
+        <form class="enter hidden">
+            <h2>Введите данные новой книги</h2>
+            <label>
+                Название книги</label>
+            <input type="text" name="title" />
+            <label>
+                Автор книги</label>
+            <input type="text" name="author" />
+            <label>
+                Количество страниц</label>
+            <input type="number" name="pages" min="1" />
+            <label>
+                Прочиатана ли книга? <br>
+                <label><input type="radio" name="read" value=1 />Да</label>
+                <label><input type="radio" name="read" value=0 checked />Нет</label>
+            </label>
+            <div class="buttons">
+                <button id="send" type="button">Отправить</button>
+                <button id="cancel" type="button">Отмена</button>
+            </div>
+        </form>
+        <section id="books"></section>
+        <section id="add">
+            <button id="button_add">Новая книга</button>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
